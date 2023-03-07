@@ -27,8 +27,8 @@ public class ItemImg extends  BaseEntity{
     @JoinColumn(name = "item_id")
     private Item item;
 
-    public void updateItemImg(String oriImgname, String imgNme, String imgUrl){
-        this.oriImgName = oriImgname;
+    public void updateItemImg(String oriImgName, String imgNme, String imgUrl){
+        this.oriImgName = oriImgName;
         this.imgNme = imgNme;
         this. imgUrl = imgUrl;
 

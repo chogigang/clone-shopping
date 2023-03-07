@@ -6,9 +6,9 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class WebMvcConfig  implements WebMvcConfigurer {
+public class WebMvcConfig implements WebMvcConfigurer {
 
-    @Value("${uploadPath}")//스프링 벨류를 써야함.
+    @Value("${uploadPath}")//스프링 벨류 써야함
     String uploadPath;
 
     @Override
@@ -16,6 +16,5 @@ public class WebMvcConfig  implements WebMvcConfigurer {
         registry.addResourceHandler("/images/**")
                 .addResourceLocations(uploadPath);
     }
-
 
 }
